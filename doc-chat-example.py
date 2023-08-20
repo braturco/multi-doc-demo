@@ -10,6 +10,7 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.text_splitter import CharacterTextSplitter
 
 # Check if the OPENAI_API_KEY environment variable is empty
+# If you have a key, you could set it through command prompt using: setx OPENAI_API_KEY "you_secret_key_here"
 if not os.environ.get("OPENAI_API_KEY"):
     # If it's empty, set it using your predefined string
     os.environ["OPENAI_API_KEY"] = "your_secret_key_here"
